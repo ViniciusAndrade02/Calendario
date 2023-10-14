@@ -1,0 +1,244 @@
+//span --> Dias da semana
+//h2 --> Numero das Datas
+//h6 --> Horario
+
+.calendario{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  background-color: #d5d4d4;
+  grid-template-columns: repeat(7,1fr);
+}
+
+.coluna-1, .coluna-2{
+  display: flex;
+  flex-direction: column;
+}
+
+.semana{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #404040;
+  color: #EBEFF1;
+  padding: 10px 0px;
+
+  span{
+    font-size: 18px;
+  }
+}
+
+.bloco{
+  display: flex;
+  flex-direction: column;
+  height: 8rem;
+  width: 100%;
+  background-color: #ffff;
+  border: 1px solid rgb(0, 0, 0);
+
+  h2{
+    font-size: 20px;
+    padding: 4px;
+    color: #404040;
+  }
+
+  p{
+    word-wrap: break-word;
+  }
+
+  &:hover , &:hover h2{
+
+    color: #ffffff;
+    background-color: #fd8e6f;
+    cursor: pointer;
+  }
+}
+
+
+
+//
+
+#nav{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+.esconder{
+  display: none !important;
+}
+
+
+.nav{
+  height: 60vh;
+  width: 35vw;
+  background-color: #fafafa;
+  border: 10px solid #FF685D;
+  box-shadow: 0 0 0 10px #fafafa;
+  border-radius: 5px;
+  position: relative;
+  animation: show-up 1.4s forwards;
+
+  @keyframes show-up {
+    from {
+      opacity: 0;
+      transform: translate3d(0,60px,0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0,0,0);
+    }
+  }
+
+  .fechar{
+    top: -32px;
+    right: -32px;
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1.2rem;
+    border-radius: 3rem;
+    border: 4px solid #FF685D;
+    background-color: #fafafa;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover{
+      font-size: 1.4rem;
+      background-color: #FF685D;
+      color: #fafafa;
+      transition: 0.4s;
+    }
+  }
+
+  .salvar{
+    bottom: 5px;
+    right: 5px;
+    position: absolute;
+    height: 2.5rem;
+    width: 10rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: #49b24d;
+    color: #ededed;
+    border: 0px;
+    cursor: pointer;
+    transition: 0.4s;
+
+    &:hover{
+      background-color: #25d822;
+      color: #fff;
+      transition: 0.4s;
+    }
+  }
+
+  .data{
+    display: block;
+    height: 2rem;
+    font-size: 2rem;
+    padding: 5px 10px;
+  }
+
+
+}
+
+.informacao{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 10px 10px;
+  margin-left: 12px;
+  border: 1px solid #767676;
+  border-radius: 5px;
+  
+
+  .input{
+    display: flex;
+    
+    .option{
+      position: relative;
+      top: 3px;
+      margin: 0px 5px;
+    }
+
+    input{
+      margin-top: 4px;
+      width: 7.5rem;
+      word-wrap: break-word;
+    }
+
+  }
+
+  select{
+    width: 8rem;
+    height: 1.5rem;
+    margin-top: 0.2rem;
+  }
+
+  .lembrete{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    label{
+      font-size: 18px;
+      padding-bottom: 2px;
+    }
+    input{
+      height: 2rem;
+      width: 47%;
+      padding: 0px 5px;
+    }
+    span{
+      padding-top: 2px;
+      font-size: 14px;
+      color: #636363;
+    }
+
+    .editar{
+      position: absolute;
+      right: 0px;
+      font-size: 14px;
+      background-color: #4cc111;
+      color: #fff;
+      border: 0px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.5s;
+      &:hover{
+        background-color:#317e0b;
+        color: #eadfdf;
+        transition: 0.5s;
+      }
+    }
+
+    .excluir{
+      position: absolute;
+      right: 0px;
+      top: 35px;
+      font-size: 14px;
+      background-color: #fc0f0f;
+      color: #fff;
+      border: 0px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.5s;
+      &:hover{
+        background-color: #da0505;
+        color: #eadfdf;
+        transition: 0.5s;
+      }
+    }
+  }
+}
