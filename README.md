@@ -10,18 +10,12 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Futuros Aprimoramentos!
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+-> Acrescentar mais lembretes em um único dia,além de acrescentar mais cores e horários das atividade!
+->Poder transferir lembretes para um outro dia determinado ao usuário
+->Identificar os dias que já passaram e colocar uma cor um pouco mais escura,para ficar destacado os dias que já foram
+->Com o Node,dá para criar pastar e arquvio,logo,quando a pessoa clicasse para entender o calendário daria para gerar um novo calendário,tambem dá para fazer com o python
+->Fazer um menu hamburguer no canto direito,mostrando as atividades mais proximas que terão que ser feita,respeitando a cor e o horario que o usuário solicitou
+->Salvar as alterações do usuário através do LocalHosting
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
