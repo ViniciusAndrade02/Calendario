@@ -1,4 +1,5 @@
 
+
 # Projeto 
 
 Desafio proposto pelo ACATE Keeps, que consiste na criação de um calendário funcional para adicionar lembretes relacionados às atividades do usuário.
@@ -34,6 +35,30 @@ Se precisar fazer uma edição, basta clicar no botão verde e fazer a alteraç�
 
 ![App Screenshot](https://github.com/ViniciusAndrade02/AprendendoGit/blob/main/img-calendario/editar%20lembrete.png?raw=true)
 
+
+## Resultado
+
+Após selecionar o lembrete, cores e horário, ele será automaticamente exibido no calendário. Simples, não é?
+
+![App Screenshot](https://github.com/ViniciusAndrade02/AprendendoGit/blob/main/img-calendario/comoficou.png?raw=true)
+
+## Precisando Editar?
+
+É só clicar no botão "EDITAR" e fazer a sua alteração. Neste caso, eu mudei para 'Ler Senhor dos Anéis', mas você também pode modificar o horário e a cor.
+
+![App Screenshot](https://github.com/ViniciusAndrade02/AprendendoGit/blob/main/img-calendario/image%2048.png?raw=true)
+
+## Excluir Lembrete
+
+Basta clicar no lembrete desejado e apertar para excluir!
+
+![App Screenshot](https://github.com/ViniciusAndrade02/AprendendoGit/blob/main/img-calendario/excluir.png?raw=true)
+
+## Ampliar o Calendário.
+
+Posicione o cursor ao lado do dia 25 e clique em "Estender Calendário" para gerar um novo mês completo, permitindo um planejamento antecipado.
+
+![App Screenshot](https://github.com/ViniciusAndrade02/AprendendoGit/blob/main/img-calendario/extender.png?raw=true)
 
 
 ## Futuros Aprimoramentos!
