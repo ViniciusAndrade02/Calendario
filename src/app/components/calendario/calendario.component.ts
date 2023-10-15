@@ -1,4 +1,4 @@
-import { Component, ElementRef } from '@angular/core';
+import { Component, ElementRef,Output,EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-calendario',
@@ -6,6 +6,7 @@ import { Component, ElementRef } from '@angular/core';
   styleUrls: ['./calendario.component.scss']
 })
 export class CalendarioComponent {
+
   DataNumero!: number;
   mostrarDiv = true;
   element!: HTMLElement;
@@ -17,9 +18,14 @@ export class CalendarioComponent {
   HrsSelect!: string;
   CorSelect!: string;
 
-  
+  //ativar a extensao do calendario
 
-  //Select Event Horas
+  @Output() enviar: EventEmitter<any> = new EventEmitter()
+
+  extender(){
+    this.enviar.emit()
+  }
+
 
 
   constructor(private el: ElementRef) {}

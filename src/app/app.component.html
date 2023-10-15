@@ -1,5 +1,7 @@
 <app-introducao></app-introducao>
-<app-calendario></app-calendario>
+<app-calendario (enviar)="ExtenderCalendario()"  ></app-calendario>
+<app-calendario2 *ngIf="mostrarCalendario"></app-calendario2>
+
 
 
 

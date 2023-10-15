@@ -1,4 +1,4 @@
-import { Component,ElementRef } from '@angular/core';
+import { Component,ElementRef,Input } from '@angular/core';
 
 @Component({
   selector: 'app-calendario2',
@@ -18,8 +18,6 @@ export class Calendario2Component {
   horario: HTMLElement | null = null;
   HrsSelect!: string;
   CorSelect!: string;
-
-  
 
   //Select Event Horas
 
