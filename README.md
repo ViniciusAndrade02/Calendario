@@ -1,14 +1,31 @@
-# Cronograma
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
+# Projeto 
 
-## Development server
+Desafio proposto pelo ACATE Keeps, que consiste na criação de um calendário funcional para adicionar lembretes relacionados às atividades do usuário.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Calendário
 
-## Code scaffolding
+![App Screenshot](https://github.com/ViniciusAndrade02/AprendendoGit/blob/main/img-calendario/Projeto.png?raw=true)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+Uma demonstração do projeto inclui uma breve descrição de como a plataforma funciona, juntamente com exemplos de lembretes para ilustrar o desempenho.Abaixo estão as instruções do projeto
+
+## Selecionado um DIA
+
+![App Screenshot](https://github.com/ViniciusAndrade02/AprendendoGit/blob/main/img-calendario/inicial.png?raw=true)
+
+Quando selecionado qualquer dia,vai abrir essa tela,mostrando o dia seleciona, as horas,cor e lembretes salvos.Nele,poderá colocar sua atividade desejado no dia,e no primeiro espaço em branco,corresponde o dia,
+## horas 
+
+![App Screenshot](https://github.com/ViniciusAndrade02/AprendendoGit/blob/main/img-calendario/horas200.png?raw=true)
+
+Agora,basta selecionar o horário desejado
+
+## Cor
+
+![App Screenshot](https://github.com/ViniciusAndrade02/AprendendoGit/blob/main/img-calendario/cor.png?raw=true)
+
+A cor e Clicar em Salvar,que o seu lembrete estará salvo no calendário
 
 ## Futuros Aprimoramentos!
 
