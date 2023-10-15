@@ -37,12 +37,15 @@ export class CalendarioComponent {
         this.horario = elemento.querySelector('h6');
         this.classCor = elemento.querySelector('.conteudo')
         const data = elemento.querySelector('h2');
-
         
         // Mostrar a Data
         this.DataNumero = Number(data?.textContent);
-
-
+        //atualizar input correspondente 
+        this.texto = this.paragrafo?.textContent || '';
+        //atualizar horario correspondente 
+        this.HrsSelect = this.horario?.textContent || '';
+        //atualizar a cor
+        this.CorSelect = this.classCor?.classList.value.replace('conteudo','').trim() || "";
 
         // Nav bar aparece e desaparecer
         this.mostrarDiv = false;
@@ -68,11 +71,6 @@ export class CalendarioComponent {
 
   //Botao Salvar
   salvar() {
-
-    //Adicionar o paragrafo no calendario
-    if (this.paragrafo){
-      this.paragrafo.textContent = this.texto
-    }
 
     //Adicionar o horario do calendario
     if (this.horario) {
@@ -106,15 +104,15 @@ export class CalendarioComponent {
 
   //Texto do Input
   atualizarTextos() {
+    
     if (this.paragrafo) {
-
+      //o texto não muda
       if(this.ModoEditar == false){
         this.texto = this.paragrafo.textContent || '';
       }else{
+        //o texto muda
         this.texto = this.texto
       }
-
-      
     }
   }
 
