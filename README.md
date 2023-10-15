@@ -14,6 +14,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 <p>➡️ Aprimorar a funcionalidade, permitindo a adição de múltiplos lembretes em um único dia, bem como a personalização de cores e horários para as atividades</p>
 <p>➡️ Possibilitar a transferência de lembretes para um dia específico escolhido pelo usuário</p>
+<p>➡️ Aprimorar a experiência do usuário ao exibir a cor e o lembrete quando ele acessa um dia vazio, proporcionando uma orientação mais clara.</p>
 <p>➡️ Marcar visualmente os dias passados com uma tonalidade ligeiramente mais escura para destacar os dias já transcorridos.</p>
 <p>➡️ Quando o usuário clicar em 'Excluir' ou 'Editar', exibir uma notificação sutil para indicar que a alteração foi realizada com sucesso.</p>
 <p>➡️ Com o Node.js, é possível criar pastas e arquivos, de modo que, ao clicar para acessar o calendário, seja viável gerar um novo calendário. Essa tarefa também pode ser realizada com Python.</p>
