@@ -10,22 +10,31 @@ Desafio proposto pelo ACATE Keeps, que consiste na criação de um calendário f
 
 Uma demonstração do projeto inclui uma breve descrição de como a plataforma funciona, juntamente com exemplos de lembretes para ilustrar o desempenho.Abaixo estão as instruções do projeto
 
-## Selecionado um DIA
+## Clique em Qualquer Dia
 
 ![App Screenshot](https://github.com/ViniciusAndrade02/AprendendoGit/blob/main/img-calendario/inicial.png?raw=true)
 
 Quando selecionado qualquer dia,vai abrir essa tela,mostrando o dia seleciona, as horas,cor e lembretes salvos.Nele,poderá colocar sua atividade desejado no dia,e no primeiro espaço em branco,corresponde o dia,
-## horas 
-
-![App Screenshot](https://github.com/ViniciusAndrade02/AprendendoGit/blob/main/img-calendario/horas200.png?raw=true)
+## Escolha Umas Das Horas
 
 Agora,basta selecionar o horário desejado
 
-## Cor
+![App Screenshot](https://github.com/ViniciusAndrade02/AprendendoGit/blob/main/img-calendario/horas200.png?raw=true)
+
+
+## Cor do Lembrete
+
+Escolha a cor desejada para destacar sua atividade e, em seguida, clique em 'SALVAR'.
 
 ![App Screenshot](https://github.com/ViniciusAndrade02/AprendendoGit/blob/main/img-calendario/cor.png?raw=true)
 
-A cor e Clicar em Salvar,que o seu lembrete estará salvo no calendário
+## Editar Lembrete
+
+Se precisar fazer uma edição, basta clicar no botão verde e fazer a alteração desejada. 
+
+![App Screenshot](https://github.com/ViniciusAndrade02/AprendendoGit/blob/main/img-calendario/editar%20lembrete.png?raw=true)
+
+
 
 ## Futuros Aprimoramentos!
 
