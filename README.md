@@ -10,7 +10,7 @@ Desafio proposto pelo ACATE Keeps, que consiste na criação de um calendário f
 
 
 Uma demonstração do projeto inclui uma breve descrição de como a plataforma funciona, juntamente com exemplos de lembretes para ilustrar o desempenho.Abaixo estão as instruções do projeto.
-Veja: <a href="https://calendario-beige.vercel.app/">Projeto</a>
+Veja: <a href="https://calendario-beige.vercel.app/">Calendário</a>
 
 ## Clique em Qualquer Dia
 
