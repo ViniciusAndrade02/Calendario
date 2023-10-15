@@ -1,3 +1,23 @@
+//estilos fonts
+
+@mixin Montserrat400{
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+@mixin Montserrat600{
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+@mixin Poppins400{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+
 .topbar{
   display: flex;
   align-items: center;
@@ -11,6 +31,7 @@
 
 .intrucoes{
   position: relative;
+
 
   .lista{
     display: none;
@@ -29,6 +50,8 @@
   li{
     padding: 6px 10px;
     max-width: 43ch;
+    font-size: 14px;
+    @include Poppins400;
   }
 
   button{
@@ -37,6 +60,7 @@
     border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
     padding: 10px;
+    @include Montserrat400;
     background-color: #FF7750;
 
     &:hover + .lista{
@@ -63,5 +87,5 @@
 .titulo{
   position: relative;
   left: -50px;
-
+  @include Montserrat600;
 }

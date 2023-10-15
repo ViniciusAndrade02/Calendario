@@ -7,6 +7,7 @@ import { Component, ElementRef,Output,EventEmitter } from '@angular/core';
 })
 export class CalendarioComponent {
 
+  //variaveis globais em relação a class
   DataNumero!: number;
   mostrarDiv = true;
   element!: HTMLElement;
@@ -18,13 +19,7 @@ export class CalendarioComponent {
   HrsSelect!: string;
   CorSelect!: string;
 
-  //ativar a extensao do calendario
 
-  @Output() enviar: EventEmitter<any> = new EventEmitter()
-
-  extender(){
-    this.enviar.emit()
-  }
 
 
 
@@ -35,10 +30,14 @@ export class CalendarioComponent {
   }
 
   ngOnInit() {
-    
+    //selecionar todos os blocos do calendário
     const elementosBloco = this.el.nativeElement.querySelectorAll('.bloco');
+
+    //selecionar o bloco que usuário especificamente clicou
     elementosBloco.forEach((elemento: HTMLElement) => {
       elemento.addEventListener('click', () => {
+
+        //puxar o que tem no dia especifico e mostrar na NavBar
         this.paragrafo = elemento.querySelector('p');
         this.horario = elemento.querySelector('h6');
         this.classCor = elemento.querySelector('.conteudo')
@@ -117,10 +116,11 @@ export class CalendarioComponent {
   atualizarTextos() {
     
     if (this.paragrafo) {
-
+      //se o lembrete não tiver vazio vai precisar clicar em editar!
       if(this.ModoEditar == false){
         this.texto = this.paragrafo.textContent || '';
       }else{
+      //se o lembrete tiver vazio poderá digitar!
         this.texto = this.texto
       }
     }
@@ -141,7 +141,6 @@ export class CalendarioComponent {
   //Select COR
   CorEvent(event: Event) {
     this.CorSelect = (event.target as HTMLSelectElement).value;
-    console.log(this.CorSelect)
   
   }
 
@@ -164,6 +163,13 @@ export class CalendarioComponent {
     this.classCor?.classList.remove('azul')
     this.classCor?.classList.add('branco')
 
+    //desaparecer a navBar
     this.mostrarDiv = true;
   }
+
+    //ativar a extensao do calendario
+    @Output() enviar: EventEmitter<any> = new EventEmitter()
+    extender(){
+      this.enviar.emit()
+    }
 }
