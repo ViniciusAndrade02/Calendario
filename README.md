@@ -9,7 +9,8 @@ Desafio proposto pelo ACATE Keeps, que consiste na criação de um calendário f
 ![App Screenshot](https://github.com/ViniciusAndrade02/AprendendoGit/blob/main/img-calendario/Projeto.png?raw=true)
 
 
-Uma demonstração do projeto inclui uma breve descrição de como a plataforma funciona, juntamente com exemplos de lembretes para ilustrar o desempenho.Abaixo estão as instruções do projeto
+Uma demonstração do projeto inclui uma breve descrição de como a plataforma funciona, juntamente com exemplos de lembretes para ilustrar o desempenho.Abaixo estão as instruções do projeto.
+Veja: <a href="https://calendario-beige.vercel.app/">Projeto</a>
 
 ## Clique em Qualquer Dia
 
