@@ -7,6 +7,8 @@ import { Component, ElementRef,Output,EventEmitter } from '@angular/core';
 })
 export class CalendarioComponent {
 
+  constructor(private el: ElementRef) {}
+
   //variaveis globais em relação a class
   DataNumero!: number;
   mostrarDiv = true;
@@ -19,12 +21,7 @@ export class CalendarioComponent {
   HrsSelect!: string;
   CorSelect!: string;
 
-
-
-
-
-  constructor(private el: ElementRef) {}
-
+  //pegar o Id no NavBar
   ngAfterViewInit() {
     this.element = this.el.nativeElement.querySelector('#nav') as HTMLElement;
   }
@@ -56,11 +53,9 @@ export class CalendarioComponent {
         this.mostrarDiv = false;
         this.element.classList.toggle('esconder');
 
-        //horario
-        console.log(this.horario?.textContent)
-
         // Atualizar texto
         this.atualizarTextos();
+        //chamar função editar
         this.editar()
 
         //se tiver vazio o paragrafo não precisará editar o texto

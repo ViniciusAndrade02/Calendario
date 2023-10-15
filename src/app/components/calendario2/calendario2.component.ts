@@ -1,4 +1,4 @@
-import { Component,ElementRef,Input } from '@angular/core';
+import { Component,ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-calendario2',
@@ -7,7 +7,9 @@ import { Component,ElementRef,Input } from '@angular/core';
 })
 export class Calendario2Component {
 
-  
+  constructor(private el: ElementRef) {}
+
+  //variaveis globais em relação a class
   DataNumero!: number;
   mostrarDiv = true;
   element!: HTMLElement;
@@ -19,20 +21,20 @@ export class Calendario2Component {
   HrsSelect!: string;
   CorSelect!: string;
 
-  //Select Event Horas
-
-
-  constructor(private el: ElementRef) {}
-
+  //pegar o Id no NavBar
   ngAfterViewInit() {
     this.element = this.el.nativeElement.querySelector('#nav') as HTMLElement;
   }
 
   ngOnInit() {
-    
+    //selecionar todos os blocos do calendário
     const elementosBloco = this.el.nativeElement.querySelectorAll('.bloco');
+
+    //selecionar o bloco que usuário especificamente clicou
     elementosBloco.forEach((elemento: HTMLElement) => {
       elemento.addEventListener('click', () => {
+
+        //puxar o que tem no dia especifico e mostrar na NavBar
         this.paragrafo = elemento.querySelector('p');
         this.horario = elemento.querySelector('h6');
         this.classCor = elemento.querySelector('.conteudo')
@@ -51,11 +53,9 @@ export class Calendario2Component {
         this.mostrarDiv = false;
         this.element.classList.toggle('esconder');
 
-        //horario
-        console.log(this.horario?.textContent)
-
         // Atualizar texto
         this.atualizarTextos();
+        //chamar função editar
         this.editar()
 
         //se tiver vazio o paragrafo não precisará editar o texto
@@ -111,10 +111,11 @@ export class Calendario2Component {
   atualizarTextos() {
     
     if (this.paragrafo) {
-
+      //se o lembrete não tiver vazio vai precisar clicar em editar!
       if(this.ModoEditar == false){
         this.texto = this.paragrafo.textContent || '';
       }else{
+        //se o lembrete tiver vazio poderá digitar!
         this.texto = this.texto
       }
     }
