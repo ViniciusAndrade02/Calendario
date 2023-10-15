@@ -12,12 +12,13 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Futuros Aprimoramentos!
 
-<p>-> Acrescentar mais lembretes em um único dia,além de acrescentar mais cores e horários das atividade!</p>
-<p>->Poder transferir lembretes para um outro dia determinado ao usuário </p>
-<p>->Identificar os dias que já passaram e colocar uma cor um pouco mais escura,para ficar destacado os dias que já foram </p>
-<p>->Com o Node,dá para criar pastar e arquvio,logo,quando a pessoa clicasse para entender o calendário daria para gerar um novo calendário,tambem dá para fazer com o python</p>
-<p>->Fazer um menu hamburguer no canto direito,mostrando as atividades mais proximas que terão que ser feita,respeitando a cor e o horario que o usuário solicitou! </p>
-<p>->Salvar as alterações do usuário através do local storage</p>
+<p>->Aprimorar a funcionalidade, permitindo a adição de múltiplos lembretes em um único dia, bem como a personalização de cores e horários para as atividades</p>
+<p>->Possibilitar a transferência de lembretes para um dia específico escolhido pelo usuário</p>
+<p>->Marcar visualmente os dias passados com uma tonalidade ligeiramente mais escura para destacar os dias já transcorridos.</p>
+<p>->Com o Node.js, é possível criar pastas e arquivos, de modo que, ao clicar para acessar o calendário, seja viável gerar um novo calendário. Essa tarefa também pode ser realizada com Python.</p>
+<p>->Criar um menu de hambúrguer no canto direito que exibe as atividades mais próximas, levando em consideração as cores e horários especificados pelo usuário, </p>
+<p>->Desenvolver um sistema CRUD básico para registrar informações de usuários e armazenar esses dados em um banco de dados.</p>
+<p>->Guardar as modificações do usuário usando o Local Storage.</p>
 
 
 
