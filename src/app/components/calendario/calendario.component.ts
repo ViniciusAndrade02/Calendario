@@ -72,6 +72,11 @@ export class CalendarioComponent {
   //Botao Salvar
   salvar() {
 
+    //O que foi digitado ficar salvo no paragrafo
+    if (this.paragrafo){
+      this.paragrafo.textContent = this.texto
+    }
+
     //Adicionar o horario do calendario
     if (this.horario) {
       this.horario.textContent = this.HrsSelect;
@@ -106,11 +111,10 @@ export class CalendarioComponent {
   atualizarTextos() {
     
     if (this.paragrafo) {
-      //o texto não muda
+
       if(this.ModoEditar == false){
         this.texto = this.paragrafo.textContent || '';
       }else{
-        //o texto muda
         this.texto = this.texto
       }
     }
