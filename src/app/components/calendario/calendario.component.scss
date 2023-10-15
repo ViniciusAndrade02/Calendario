@@ -36,14 +36,25 @@
   background-color: #ffff;
   border: 1px solid rgb(0, 0, 0);
 
+
   h2{
     font-size: 20px;
     padding: 4px;
     color: #404040;
   }
 
+  h6{
+    font-size: 16px;
+    color: #282626;
+    font-weight: 600;
+  }
+
   p{
+    font-size: 14px;
+    padding-top: 1px;
     word-wrap: break-word;
+    color: #040404;
+    text-transform: capitalize;
   }
 
   &:hover , &:hover h2{
@@ -52,9 +63,35 @@
     background-color: #fd8e6f;
     cursor: pointer;
   }
+
 }
 
+.conteudo{
+  height: 45%;
+  margin: 0px 5px;
+  padding: 5px 5px;
+  border-radius: 5px;
+}
 
+.branco{
+  background-color: transparent;
+}
+
+.laranja{
+  background-color: #fdbd4e;
+}
+
+.roxo{
+  background-color: #db86fc;
+}
+
+.amarelo{
+  background-color: #fbf53d;
+}
+
+.azul{
+  background-color: #71b3f6;
+}
 
 //
 
