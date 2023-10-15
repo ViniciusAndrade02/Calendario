@@ -1,0 +1,67 @@
+.topbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  width: 100%;
+  color: #fafafa;
+
+
+}
+
+.intrucoes{
+  position: relative;
+
+  .lista{
+    display: none;
+    position: absolute;
+    z-index: 200;
+    width: 23rem;
+    border-radius: 5px;
+    background-color: #4e4d4d;
+
+    &:hover{
+      display: block;
+      
+    }
+  }
+
+  li{
+    padding: 6px 10px;
+    max-width: 43ch;
+  }
+
+  button{
+    font-size: 16px;
+    color: #000000;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #FF7750;
+
+    &:hover + .lista{
+      display: block;
+      animation: show-up 0.5s forwards;
+      cursor: pointer;
+    }
+  }
+
+  
+}
+
+@keyframes show-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0,30px,0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}
+
+.titulo{
+  position: relative;
+  left: -50px;
+
+}
