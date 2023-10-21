@@ -57,7 +57,7 @@ Basta clicar no lembrete desejado e apertar para excluir!
 
 ## Ampliar o Calendário.
 
-Posicione o cursor ao lado do dia 31 e clique em "Estender Calendário" para gerar um novo mês completo, permitindo um planejamento antecipado.
+Posicione o cursor ao lado do dia 31 e clique em "Extender Calendário" para gerar um novo mês completo, permitindo um planejamento antecipado.
 
 ![App Screenshot](https://github.com/ViniciusAndrade02/AprendendoGit/blob/main/img-calendario/extender.png?raw=true)
 
