@@ -1,8 +1,8 @@
-
+<h2>PASSEI :)</h2>
 
 # Projeto 
 
-Desafio proposto pelo ACATE Keeps, que consiste na criação de um calendário funcional para adicionar lembretes relacionados às atividades do usuário. <h2>PASSEI :)</h2>
+Desafio proposto pelo ACATE Keeps, que consiste na criação de um calendário funcional para adicionar lembretes relacionados às atividades do usuário. 
 
 ## Calendário
 
