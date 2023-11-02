@@ -2,7 +2,7 @@
 
 # Projeto 
 
-Desafio proposto pelo ACATE Keeps, que consiste na criação de um calendário funcional para adicionar lembretes relacionados às atividades do usuário.
+Desafio proposto pelo ACATE Keeps, que consiste na criação de um calendário funcional para adicionar lembretes relacionados às atividades do usuário. Passei!!!! :)
 
 ## Calendário
 
